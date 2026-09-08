@@ -1,0 +1,10 @@
+.hero-photo {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.project-card-img {
+  height: 220px;
+  object-fit: cover;
+}
