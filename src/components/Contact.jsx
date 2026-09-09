@@ -51,9 +51,9 @@ function Contact({ profile }) {
               ))}
             </div>
 
-            <a href={`mailto:${profile.email}`} className="btn btn-primary px-4 py-2 mt-4">
+            <button className="btn btn-primary px-4 py-2 mt-4">
               Contact Me
-            </a>
+            </button>
           </div>
 
           <div className="col-lg-7">
