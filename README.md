@@ -49,7 +49,6 @@ npm run build
 npm run preview
 ```
 
-> **Note:** if npm warns about an `esbuild` install script needing approval, run `npm approve-scripts esbuild` once after `npm install`.
 
 ## Customizing Content
 
@@ -93,7 +92,7 @@ src/
   assets/
     images/
       profile-photo.png
-      
+
   App.jsx        <- profile / skills / projects content lives here
   main.jsx        <- app entry point, imports Bootstrap CSS/JS
   styles.css      <- minimal custom CSS (image sizing)
