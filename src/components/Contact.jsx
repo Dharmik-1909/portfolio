@@ -1,24 +1,4 @@
-import { useState } from 'react'
-
 function Contact({ profile }) {
-  const [validated, setValidated] = useState(false)
-  const [submitted, setSubmitted] = useState(false)
-
-  const handleSubmit = (event) => {
-    const form = event.currentTarget
-    event.preventDefault()
-    if (form.checkValidity() === false) {
-      event.stopPropagation()
-      setValidated(true)
-      setSubmitted(false)
-      return
-    }
-    setValidated(true)
-    setSubmitted(true)
-    form.reset()
-    setValidated(false)
-  }
-
   return (
     <section id="contact" className="py-5">
       <div className="container py-5">
@@ -77,48 +57,35 @@ function Contact({ profile }) {
           </div>
 
           <div className="col-lg-7">
-            <form
-              noValidate
-              className={`row g-3 ${validated ? 'was-validated' : ''}`}
-              onSubmit={handleSubmit}
-            >
+            <form className="row g-3">
               <div className="col-md-6">
                 <label htmlFor="contactName" className="form-label">
                   Name
                 </label>
-                <input type="text" className="form-control" id="contactName" required />
-                <div className="invalid-feedback">Please enter your name.</div>
+                <input type="text" className="form-control" id="contactName" />
               </div>
               <div className="col-md-6">
                 <label htmlFor="contactEmail" className="form-label">
                   Email
                 </label>
-                <input type="email" className="form-control" id="contactEmail" required />
-                <div className="invalid-feedback">Please enter a valid email.</div>
+                <input type="email" className="form-control" id="contactEmail" />
               </div>
               <div className="col-12">
                 <label htmlFor="contactSubject" className="form-label">
                   Subject
                 </label>
-                <input type="text" className="form-control" id="contactSubject" required />
-                <div className="invalid-feedback">Please enter a subject.</div>
+                <input type="text" className="form-control" id="contactSubject" />
               </div>
               <div className="col-12">
                 <label htmlFor="contactMessage" className="form-label">
                   Message
                 </label>
-                <textarea className="form-control" id="contactMessage" rows="5" required></textarea>
-                <div className="invalid-feedback">Please enter a message.</div>
+                <textarea className="form-control" id="contactMessage" rows="5"></textarea>
               </div>
               <div className="col-12">
                 <button type="submit" className="btn btn-primary px-4 py-2">
                   Send Message
                 </button>
-                {submitted && (
-                  <p className="text-muted mt-3 mb-0" role="status">
-                    Thanks! Your message has been prepared. (Backend delivery is out of scope for V1.)
-                  </p>
-                )}
               </div>
             </form>
           </div>

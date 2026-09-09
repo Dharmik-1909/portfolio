@@ -19,7 +19,6 @@ function Hero({ profile }) {
           <div className="col-lg-6 order-1 order-lg-2">
             <img
               src={profile.profileImage}
-              alt={`Portrait of ${profile.name}, ${profile.role}`}
               className="hero-photo img-fluid rounded border mx-auto d-block"
               style={{ maxWidth: '420px' }}
             />

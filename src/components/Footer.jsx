@@ -1,11 +1,9 @@
 function Footer({ profile }) {
-  const year = new Date().getFullYear()
-
   return (
     <footer className="bg-dark text-white py-4">
       <div className="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
         <p className="mb-0">
-          &copy; {year} {profile.name}. All rights reserved.
+          &copy; 2026 {profile.name}. All rights reserved.
         </p>
         <div className="d-flex gap-3">
           {profile.socialLinks.map((social) => (

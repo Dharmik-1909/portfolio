@@ -94,7 +94,7 @@ src/
       profile-photo.png
   App.jsx        <- profile / skills / projects content lives here
   main.jsx        <- app entry point, imports Bootstrap CSS/JS
-  styles.css      <- minimal custom CSS (image sizing + scroll offset only)
+  styles.css      <- minimal custom CSS (image sizing)
 index.html
 package.json
 vite.config.js
@@ -104,8 +104,7 @@ Components are kept presentational — each one receives its data as props from 
 
 ## Known Limitations / Out of Scope (V1)
 
-- The Contact form is validated client-side only; there is no backend wired up to actually send messages (see PRD section 13).
-- Project images currently use placeholder graphics — replace the `image` URLs in the `projects` array with real screenshots.
+- The Contact form is validated client-side only; there is no backend wired up to actually send messages.
 - No routing — this is a single page with anchor-link navigation, not a multi-page app.
 
 ## Roadmap

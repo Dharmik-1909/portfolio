@@ -3,7 +3,7 @@ function SkillBar({ name, percentage, icon }) {
     <div className="mb-4">
       <div className="d-flex justify-content-between align-items-center mb-2">
         <span className="fw-semibold">
-          {icon && <i className={`bi ${icon} me-2 text-primary`} aria-hidden="true"></i>}
+          <i className={`bi ${icon} me-2 text-primary`} aria-hidden="true"></i>
           {name}
         </span>
         <span className="text-muted">{percentage}%</span>
