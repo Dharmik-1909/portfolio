@@ -89,9 +89,11 @@ src/
     Contact.jsx
     Footer.jsx
     ScrollToTop.jsx
+
   assets/
     images/
       profile-photo.png
+      
   App.jsx        <- profile / skills / projects content lives here
   main.jsx        <- app entry point, imports Bootstrap CSS/JS
   styles.css      <- minimal custom CSS (image sizing)
@@ -106,7 +108,3 @@ Components are kept presentational — each one receives its data as props from 
 
 - The Contact form is validated client-side only; there is no backend wired up to actually send messages.
 - No routing — this is a single page with anchor-link navigation, not a multi-page app.
-
-## Roadmap
-
-A dark-theme redesign (v3) is scoped in a separate PRD — it revises the Navbar, Skills, and Projects sections to simpler layouts under Bootstrap's native dark color mode, while keeping this same Bootstrap-first, data-in-`App.jsx` approach. See `portfolio_prd_v3_dark_theme.docx` for details.
