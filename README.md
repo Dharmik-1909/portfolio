@@ -62,8 +62,6 @@ Edit those three items directly in `App.jsx` and the whole site updates — no o
 
 To change the profile photo, replace `src/assets/images/profile-photo.png` (the import in `App.jsx` stays the same, since it references that exact filename).
 
-To wire up the "Download CV" button, add your PDF to `public/cv/` and update `cvUrl` in the `profile` object.
-
 ## Styling Approach
 
 Styling is ~95% stock Bootstrap 5 utility and component classes — the default blue/gray palette, `btn-primary` / `btn-outline-primary`, `text-muted`, `bg-light` / `bg-dark`, `card`, `border`, `progress`, `badge`, and standard grid/spacing utilities (`py-5`, `g-4`, `gap-3`, etc.).
@@ -107,3 +105,7 @@ Components are kept presentational — each one receives its data as props from 
 
 - The Contact form is validated client-side only; there is no backend wired up to actually send messages.
 - No routing — this is a single page with anchor-link navigation, not a multi-page app.
+
+## Video Explanation Link
+
+https://drive.google.com/file/d/1gzRb4bfE_mZiJGVwl-9VTDRrDZp-tZHF/view?usp=sharing
